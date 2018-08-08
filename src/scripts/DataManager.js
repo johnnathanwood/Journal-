@@ -8,5 +8,12 @@ const saveJournalEntry = (entry) => {
     })
     .then(response => response.json())
 }
+getJournalEntries:{
+    value: (entry) => {
+        return fetch("http://localhost:8088/entries", {
+        })
+        .then(response => response.json())
+    }
+}
 
 module.exports = saveJournalEntry
